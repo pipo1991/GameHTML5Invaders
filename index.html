@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang"en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pipo Game ver 1.0</title>
+    </head>
+    
+    <body style="background:#FF0030;">
+    	<h3 align="center"> Press Enter to Start the game </h3>
+    	<canvas id="canvasBg" width="800" height="500" style="display:block;background:#ffffff;margin:30px auto 0px;">	
+    	</canvas>
+		<canvas id="canvasEnemy" width="800" height="500" style="display:block;margin:-500px auto 0px;">	
+    	</canvas>
+		<canvas id="canvasJet" width="800" height="500" style="display:block;margin:-500px auto 0px;">	
+    	</canvas>
+    	<br>
+    	<div align="center">
+    		<button id="newGame" type="button">New Game</button>
+	    	<button id="resumeBtn" type="button">Pause/Resume Game</button>
+	    	<button id="mute" type="button">Mute Effects</button>
+	    	<div id="inner"></div>
+	    </div>
+    	<script src="game.js"></script>
+    	<audio id="bomb" src="sound/bomb.wav" preload="auto"></audio>
+    	<audio id="rock" src="sound/rock.mp3" preload="auto"></audio>
+    	<audio id="st" src="sound/st.mp3" preload="auto"></audio>
+    </body>
+</html>
